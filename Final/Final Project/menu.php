@@ -5,16 +5,16 @@
 		$logo = "glyphicon glyphicon-user";
 		if($_SESSION['Category']!= 1)
 		{
-			$link = "Login/profile.php";
+			$link = "profile.php";
 		}
 		else {
-				$link = "profileView.php";
+				$link = "../profileView.php";
 		}
 	}
 	else
 	{
 		$loginProfile = "Login";
-		$link = "index.php";
+		$link = "../index.php";
 		$logo = "glyphicon glyphicon-log-in";
 	}
 ?>
@@ -24,11 +24,11 @@
 				<h1><a href="index.php">AgroCulture</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-						<li><a href="myCart.php"><span class="glyphicon glyphicon-shopping-cart"> MyCart</a></li>
+						<li><a href="../index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="../myCart.php"><span class="glyphicon glyphicon-shopping-cart"> MyCart</a></li>
 						<li><a href="<?= $link; ?>"><span class="<?php echo $logo; ?>"></span><?php echo" ". $loginProfile; ?></a></li>
-						<li><a href="market.php"><span class="glyphicon glyphicon-grain"> Digital-Market</a></li>
-						<li><a href="blogView.php"><span class="glyphicon glyphicon-comment"> BLOG</a></li>
+						<li><a href="../market.php"><span class="glyphicon glyphicon-grain"> Digital-Market</a></li>
+						<li><a href="../blogView.php"><span class="glyphicon glyphicon-comment"> BLOG</a></li>
 					</ul>
 				</nav>
 			</header>
